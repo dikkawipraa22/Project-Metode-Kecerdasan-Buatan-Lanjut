@@ -4,7 +4,7 @@ import pandas as pd
 import math
 import joblib
 
-tuning = pd.read_csv('hasiltuning/hasiltuning.csv')
+tuning = pd.read_csv('hasiltuning.csv')
 best_index = tuning['mse'].idxmin()
 best_hidden_layer_global = tuning['hidden_layer'][best_index]
 best_hidden_neuron_global = tuning['hidden_neuron'][best_index]
